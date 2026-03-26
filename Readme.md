@@ -8,7 +8,7 @@ A simple CLI speed test tool written in Go.
 
 ```bash
 git clone https://github.com/bini-x/wifi-speedtest.git
-cd speedtest
+cd wifi-speedtest
 ```
 
 ## Requirements
