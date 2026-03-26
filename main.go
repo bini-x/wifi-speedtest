@@ -20,7 +20,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer downloadResponse.Body.Close()
 
 	bytesResult, err := io.Copy(io.Discard, downloadResponse.Body)
 	if err != nil {
@@ -33,13 +32,10 @@ func main() {
 
 	start = time.Now()
 
-	uploadResponse, err := http.Post("https://speed.cloudflare.com/__up", "application/octet-stream", bytes.NewReader(uploadPayload))
+	_, err = http.Post("https://speed.cloudflare.com/__up", "application/octet-stream", bytes.NewReader(uploadPayload))
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	defer uploadResponse.Body.Close()
-	io.Copy(io.Discard, uploadResponse.Body)
 
 	end = time.Since(start).Seconds()
 
