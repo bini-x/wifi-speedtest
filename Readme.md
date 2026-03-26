@@ -4,9 +4,16 @@ A simple CLI speed test tool written in Go using Cloudflare's endpoints.
  
 > You can use this on your terminal only.
  
+## Installation
+ 
+```bash
+git clone https://github.com/bini-x/wifi-speedtest.git
+cd wifi-speedtest
+```
+ 
 ## Requirements
  
-- [Go](https://golang.org/dl/)
+- [Go](https://go.dev/)
  
 ## Usage
  
