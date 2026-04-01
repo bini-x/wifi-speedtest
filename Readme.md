@@ -6,28 +6,7 @@ A simple CLI speed test tool written in Go.
 
 ## Installation
 
-```bash
-git clone https://github.com/bini-x/wifi-speedtest.git
-cd wifi-speedtest
-```
-
-## Requirements
-
-- [Go](https://go.dev/)
-
-## Usage
-
-**Unix**
-```bash
-go build -o speedtest .
-./speedtest
-```
-
-**Windows**
-```bash
-go build -o speedtest .
-speedtest.exe
-```
+Download the latest binary for your platform from the [Releases page](https://github.com/bini-x/wifi-speedtest/releases).
 
 ## Output
 
